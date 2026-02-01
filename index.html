@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter">PORTFOLIO<span class="text-sky-400">.</span></h1>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-sky-400 transition">About</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <h2 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                    Hi, I'm <span class="gradient-text">Lotus</span>
+                </h2>
+                <p class="text-slate-400 text-lg max-w-lg">
+                    A passionate developer focused on building clean, functional, and user-centric digital experiences. Let's build something extraordinary.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-full font-semibold transition">Get in Touch</a>
+                    <a href="#projects" class="border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-full font-semibold transition">View Work</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <img src="image/lotus_img.jpeg" alt="Profile" class="rounded-3xl object-cover shadow-2xl border-4 border-slate-800 rotate-3 hover:rotate-0 transition duration-500">
+                    <div class="absolute -z-10 inset-0 bg-sky-500 blur-3xl opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12">Selected Projects</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-sky-500 transition">
+                    <div class="h-48 bg-slate-700"></div> <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Project Alpha</h4>
+                        <p class="text-slate-400 mb-4">A sophisticated web application built with React and Tailwind CSS.</p>
+                        <a href="#" class="text-sky-400 font-medium group-hover:underline">View Case Study →</a>
+                    </div>
+                </div>
+                <div class="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-sky-500 transition">
+                    <div class="h-48 bg-slate-700"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Project Beta</h4>
+                        <p class="text-slate-400 mb-4">Mobile-first e-commerce solution with seamless payment integration.</p>
+                        <a href="#" class="text-sky-400 font-medium group-hover:underline">View Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-4">Let's Talk</h3>
+            <p class="text-slate-400 mb-10">Have a project in mind or just want to say hi? Drop me a message.</p>
+            
+            <form class="space-y-4 text-left bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Name</label>
+                    <input type="text" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-500" placeholder="hello">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Email</label>
+                    <input type="email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-500" placeholder="hello@example.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Message</label>
+                    <textarea class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-sky-500 h-32" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 py-3 rounded-lg font-bold transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-10 text-center text-slate-500 text-sm border-t border-slate-800">
+        © 2026 Lotus. Built with ❤️ and Code.
+    </footer>
+
+</body>
+</html>
